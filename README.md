@@ -8,8 +8,6 @@ Kerangka pengujian UI Web menggunakan Cucumber, Java, Gradle, Selenium dengan sp
 - Chrome v125.xx
 - Gradle v7.5.1
 - InteliJ Idea
-- Allure
-- Scoop
 
 Pembuatan project ini bertujuan untuk pengujian Web secara automation untuk aplikasi https://www.saucedemo.com/
 Tahap-tahap yang dilakukan untuk membuat project tersebut:
