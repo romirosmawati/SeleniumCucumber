@@ -34,4 +34,5 @@ Tahap-tahap yang dilakukan untuk membuat project tersebut:
 6. buat class CucumberTest dan tambahkan option plugin pretty untuk membuat report menjadi lebih readable
 7. cara menjalankan project ini dengan run class CucumberTest dan logs akan muncul pada tab Terminal
 8. Hasil yang akan didapatkan sebagai berikut
-9. Hasil report yang sudah dibuat sebagai berikut
+9. Hasil report yang sudah dibuat
+    https://github.com/romirosmawati/SeleniumCucumber/blob/main/Screenshot%202024-06-11%20205022.png
