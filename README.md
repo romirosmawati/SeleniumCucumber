@@ -11,28 +11,27 @@ Kerangka pengujian UI Web menggunakan Cucumber, Java, Gradle, Selenium dengan sp
 - Allure
 - Scoop
 
-Pembuatan project ini bertujuan untuk pengujian Web secara automation untuk aaplikasi https://www.saucedemo.com/
+Pembuatan project ini bertujuan untuk pengujian Web secara automation untuk aplikasi https://www.saucedemo.com/
 Tahap-tahap yang dilakukan untuk membuat project tersebut:
-1. depenecies Selenium, WebDriverManager, Cucumber, Junit yang akan di simpan pada file build.gradle
-  Selenium => implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
-  WebDrivermanager => implementation 'io.github.bonigarcia:webdrivermanager:5.7.0'
-  Cucumber => implementation 'io.cucumber:cucumber-java:7.15.0'
-              testImplementation 'io.cucumber:cucumber-junit:7.15.0'
-  jUnit => testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
-           testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
-2. set konfigurasi pada build.gradle seperti dibawah ini
+1. depedencies Selenium, WebDriverManager, Cucumber, Junit yang akan di simpan pada file build.gradle
    
+  ![Screenshot 2024-06-11 212828](https://github.com/romirosmawati/SeleniumCucumber/assets/32626103/6e30d135-8a96-4532-a1fd-1a80fe00a447)
+
+3. set konfigurasi pada build.gradle seperti dibawah ini
+
    configurations {
     cucumberRuntime {
         extendsFrom testImplementation
     }
   }
 
-3. buat file Gherkin format untuk fitur login
-4. buat step definitation dari scenario pada file gherkin
-5. buat class LoginPage dan HomePage
-6. buat class CucumberTest dan tambahkan option plugin pretty untuk membuat report menjadi lebih readable
-7. cara menjalankan project ini dengan run class CucumberTest dan logs akan muncul pada tab Terminal
-8. Hasil yang akan didapatkan sebagai berikut
-9. Hasil report yang sudah dibuat
-    https://github.com/romirosmawati/SeleniumCucumber/blob/main/Screenshot%202024-06-11%20205022.png
+4. buat file Gherkin format untuk fitur login
+5. buat step definitation dari scenario pada file gherkin
+6. buat class LoginPage dan HomePage
+7. buat class CucumberTest dan tambahkan option plugin pretty untuk membuat report menjadi lebih readable
+   ![Screenshot 2024-06-11 213150](https://github.com/romirosmawati/SeleniumCucumber/assets/32626103/121f0bd0-0d81-4cbf-9049-cb2a901c8f73)
+
+8. cara menjalankan project ini dengan run class CucumberTest dan logs akan muncul pada tab Terminal
+9. Hasil yang akan didapatkan sebagai berikut
+10. Hasil report yang sudah dibuat
+![Screenshot 2024-06-11 205022](https://github.com/romirosmawati/SeleniumCucumber/assets/32626103/f31245bd-10e4-472c-a09d-5f2f1af9671b)
