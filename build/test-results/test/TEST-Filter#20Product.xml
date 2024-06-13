@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Filter Product" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-06-13T04:37:44" hostname="LAPTOP-E5TGUSSP" time="11.953">
+  <properties/>
+  <testcase name="Filter Price (low to high)" classname="Filter Product" time="3.974"/>
+  <testcase name="Filter Name (Z to A)" classname="Filter Product" time="4.11"/>
+  <testcase name="Filter Price (high to low)" classname="Filter Product" time="3.869"/>
+  <system-out><![CDATA[
+@filter-product @filter-price-low-to-high
+Scenario: Filter Price (low to high)                                 ?[90m# src/test/resources/filter-product.feature:5?[0m
+  ?[32mGiven ?[0m?[32muser is on login page?[0m                                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userIsOnLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser input username with ?[0m?[32m?[1m"standard_user"?[0m                       ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputUsernameWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password with ?[0m?[32m?[1m"secret_sauce"?[0m                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputPasswordWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser is on homepage?[0m                                            ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userIsOnHomepage()?[0m
+  ?[32mAnd ?[0m?[32muser click filter button?[0m                                       ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userClickFilter()?[0m
+  ?[32mWhen ?[0m?[32mselect Price low to high?[0m                                      ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.selectPriceLowToHigh()?[0m
+  ?[32mThen ?[0m?[32mlist products in order from cheapest to highest product price?[0m ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.listProductsInOrderFromCheapestToHighestProductPrice()?[0m
+
+@filter-product @filter-name-z-to-a
+Scenario: Filter Name (Z to A)                                       ?[90m# src/test/resources/filter-product.feature:16?[0m
+  ?[32mGiven ?[0m?[32muser is on login page?[0m                                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userIsOnLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser input username with ?[0m?[32m?[1m"standard_user"?[0m                       ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputUsernameWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password with ?[0m?[32m?[1m"secret_sauce"?[0m                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputPasswordWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser is on homepage?[0m                                            ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userIsOnHomepage()?[0m
+  ?[32mAnd ?[0m?[32muser click filter button?[0m                                       ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userClickFilter()?[0m
+  ?[32mWhen ?[0m?[32mselect name Z to A?[0m                                            ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.selectNameAToZ()?[0m
+  ?[32mThen ?[0m?[32mlist products in order from cheapest to highest product price?[0m ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.listProductsInOrderFromCheapestToHighestProductPrice()?[0m
+
+@filter-product @filter-price-high-to-low
+Scenario: Filter Price (high to low)                                 ?[90m# src/test/resources/filter-product.feature:27?[0m
+  ?[32mGiven ?[0m?[32muser is on login page?[0m                                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userIsOnLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser input username with ?[0m?[32m?[1m"standard_user"?[0m                       ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputUsernameWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password with ?[0m?[32m?[1m"secret_sauce"?[0m                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputPasswordWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                                        ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser is on homepage?[0m                                            ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userIsOnHomepage()?[0m
+  ?[32mAnd ?[0m?[32muser click filter button?[0m                                       ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userClickFilter()?[0m
+  ?[32mWhen ?[0m?[32mselect price high to low?[0m                                      ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.selectPriceHighToLow()?[0m
+  ?[32mThen ?[0m?[32mlist products in order from cheapest to highest product price?[0m ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.listProductsInOrderFromCheapestToHighestProductPrice()?[0m
+]]></system-out>
+  <system-err><![CDATA[Jun 13, 2024 11:37:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 125
+Jun 13, 2024 11:37:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 13, 2024 11:37:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 125
+Jun 13, 2024 11:37:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 13, 2024 11:37:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 125
+Jun 13, 2024 11:37:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Details Product" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-13T04:37:31" hostname="LAPTOP-E5TGUSSP" time="12.285">
+  <properties/>
+  <testcase name="Details product" classname="Details Product" time="12.285"/>
+  <system-out><![CDATA[
+@details-product @details-product
+Scenario: Details product                      ?[90m# src/test/resources/details-product.feature:5?[0m
+  ?[32mGiven ?[0m?[32muser is on login page?[0m                  ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userIsOnLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser input username with ?[0m?[32m?[1m"standard_user"?[0m ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputUsernameWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password with ?[0m?[32m?[1m"secret_sauce"?[0m  ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userInputPasswordWith(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                  ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser is on homepage?[0m                      ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userIsOnHomepage()?[0m
+  ?[32mWhen ?[0m?[32muser click product name?[0m                 ?[90m# com.selenium.cucumber.stepdef.HomeStepDef.userClickProductName()?[0m
+sama
+sama
+  ?[32mThen ?[0m?[32muser is on product page?[0m                 ?[90m# com.selenium.cucumber.stepdef.DetailsProductStepDef.userIsOnProductPage()?[0m
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Jun 13, 2024 11:37:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 125
+Jun 13, 2024 11:37:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
