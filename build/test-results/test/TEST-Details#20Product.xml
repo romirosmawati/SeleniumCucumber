@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Details Product" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-13T04:37:31" hostname="LAPTOP-E5TGUSSP" time="12.285">
+<testsuite name="Details Product" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-13T06:39:37" hostname="LAPTOP-E5TGUSSP" time="11.615">
   <properties/>
-  <testcase name="Details product" classname="Details Product" time="12.285"/>
+  <testcase name="Details product" classname="Details Product" time="11.615"/>
   <system-out><![CDATA[
 @details-product @details-product
 Scenario: Details product                      ?[90m# src/test/resources/details-product.feature:5?[0m
@@ -18,9 +18,9 @@ sama
   <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jun 13, 2024 11:37:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 13, 2024 1:39:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 125
-Jun 13, 2024 11:37:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 13, 2024 1:39:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

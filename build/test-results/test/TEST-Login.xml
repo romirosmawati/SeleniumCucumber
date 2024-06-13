@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-13T04:37:56" hostname="LAPTOP-E5TGUSSP" time="7.97">
+<testsuite name="Login" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-13T06:40:01" hostname="LAPTOP-E5TGUSSP" time="6.513">
   <properties/>
-  <testcase name="Login using valid email and password" classname="Login" time="4.318"/>
-  <testcase name="Login using invalid email and password" classname="Login" time="3.652"/>
+  <testcase name="Login using valid email and password" classname="Login" time="3.046"/>
+  <testcase name="Login using invalid email and password" classname="Login" time="3.467"/>
   <system-out><![CDATA[
 @login @valid-login
 Scenario: Login using valid email and password ?[90m# src/test/resources/login.feature:5?[0m
@@ -20,13 +20,13 @@ Scenario: Login using invalid email and password                                
   ?[32mWhen ?[0m?[32muser click login button?[0m                                                                                    ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userClickLoginButton()?[0m
   ?[32mThen ?[0m?[32muser able to see error message ?[0m?[32m?[1m"Epic sadface: Username and password do not match any user in this service"?[0m ?[90m# com.selenium.cucumber.stepdef.LoginStepDef.userAbleToSeeErrorMessage(java.lang.String)?[0m
 ]]></system-out>
-  <system-err><![CDATA[Jun 13, 2024 11:37:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[Jun 13, 2024 1:40:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 125
-Jun 13, 2024 11:37:58 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 13, 2024 1:40:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 13, 2024 11:38:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 13, 2024 1:40:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 125
-Jun 13, 2024 11:38:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 13, 2024 1:40:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

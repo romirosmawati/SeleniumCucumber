@@ -64,6 +64,7 @@ public class HomePage {
         driver.findElement(burgerButton).click();
     }
     public void clickLogoutButton() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(logoutButton).click();
     }
 

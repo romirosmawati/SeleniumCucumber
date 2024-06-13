@@ -1,4 +1,4 @@
-@lgout
+@logout
 Feature: Logout
 
   Scenario: Logout
